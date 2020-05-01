@@ -15,28 +15,58 @@
     background-size: contain;}
 
  [role=banner]{ 
-        background: url(.../img/huntington.png);
-        border-style: solid;
-        background-size: cover;}
+        background: url(../../img/huntington.png);
+        background-size: cover;
+        background-color: darkcyan;
+        border: transparent;
+    }
+
 h1{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    text-shadow: 4px 4px black;
     font-size: 50px;
+    color: white;
 }
 h2{
     text-align: center;
     font-family: 'Satisfy', cursive;
     font-size: 25px;
+    color: white;
 }
 
 
-.h3{
+h3{
     color: black;
     font: bold;
     font-family: 'Roboto', sans-serif;
 }
 
+/*remove lines*/
+[title="Cascading Style Sheets"]{
+    text-decoration: none;
+}
+[title="Document Object Model"]{
+    text-decoration: none;
+}
+[title="World Wide Web Consortium"]{
+    text-decoration: none;
+}
+[title="Web Standards Project"]{
+    text-decoration: none;
+}
+[title="HyperText Markup Language"]{
+    text-decoration: none;
+}
+[title="Cascading Style Sheets, levels 1 and 2"]{
+    text-decoration: none;
+}
+[title="Cascading Style Sheets, levels 3 and 4"]{
+    text-decoration: none;
+}
+
+/**/
 
 .summary{
     border: 1px none;
@@ -124,6 +154,15 @@ div.participation, .benefits {
     padding-bottom: 0px;
     padding-left: 50px
 }
+/*Requirements links edit*/
+[href="http://www.mezzoblue.com/zengarden/submit/guidelines/"]{
+    text-decoration: none;
+    color: black;
+}
+[href="http://creativecommons.org/licenses/by-nc-sa/3.0/"]{
+    text-decoration: none;
+    color: black;
+}
 
 /*CONTENT INFO*/
 
@@ -168,12 +207,6 @@ div footer{
 
 /****/
 
-
-
-
-
-
-
  .sidebar{
      background-color: rgb(223, 236, 223);
  }
@@ -194,6 +227,7 @@ div footer{
     text-align: right;
     column-count: 1;
     
+    
 }
  
 .design-selection ul li:nth-child(1) , .design-selection ul li:nth-child(3) , .design-selection ul li:nth-child(5) , .design-selection ul li:nth-child(7){
@@ -202,6 +236,10 @@ div footer{
 }
 
 
+.design-selection ul a:nth-child(1){
+    color: black;
+}
+
 
 
  .design-selection ul li{
@@ -209,10 +247,15 @@ div footer{
         list-style: none;
         margin-right: 150px;
         margin-left: 150px;
-        text-decoration: none;
+        text-decoration: none;}
+
+    .design-selection ul a{
+        color: grey;
+        text-decoration: none;  
     }
- 
- 
+ [class ="design-name"] {
+    font-family: 'Roboto', sans-serif;
+ }
 
 
 /*ARCHIVES COLUMNS*/
@@ -228,9 +271,13 @@ div footer{
     margin-left: 150px;
     text-decoration: none;
 }
+.design-archives ul a{
+    color:grey;
+    text-decoration: none;
+}
 .viewall{
     position: relative;
-    left: 67%;
+    left: 60%;
 }
 
 
@@ -245,11 +292,17 @@ div footer{
 .zen-resources{
     background-color: darkseagreen;
     column-count: 2;
-    column-fill: balance;}
+    column-fill: balance;
+
+}
 .zen-resources ul{
     list-style: none;
     margin-right: 150px;
     margin-left: 150px;
+}
+.zen-resources ul a{
+    color: grey;
+    text-decoration: none;
 }
 
 /*Hover!*/
